@@ -8,13 +8,24 @@
 </head>
 <body>
     <div>
-        <h1>さるぼぼのおさんぽ</h1>
-        <div class="game-container">
-            <img id="sarubobo" src="img/押しぼぼ前.png" alt="さるぼぼ">
-        </div>
-        <div class="instructions">
-            <p>キーボードの矢印キー(←↑→↓)でさるぼぼを動かせます。</p>
-        </div>
+    <h1>さるぼぼのおさんぽ</h1>
+    <div class="game-container">
+        <!-- ゴール画像（あなたの指定した画像） -->
+        <img id="goal" src="img/押しぼぼ前.png" alt="ゴール">
+
+        <!-- さるぼぼキャラ -->
+        <img id="sarubobo" src="img/押しぼぼ前.png" alt="さるぼぼ">
+    </div>
+
+    <!-- 残り時間 -->
+    <div id="timer">残り時間: 30秒</div>
+
+    <!-- メッセージ -->
+    <div id="message" class="message"></div>
+
+    <div class="instructions">
+        <p>キーボードの矢印キー(←↑→↓)でさるぼぼを動かせます。</p>
+    </div>
     </div>
 
     <script src="game.js"></script>
